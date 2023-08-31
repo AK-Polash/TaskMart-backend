@@ -7,7 +7,7 @@ const dbConfig = require("./config/dbConfig");
 const cors = require("cors");
 const _ = require("./routes");
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8000;
 
 const io = new Server(server, {
   cors: {
